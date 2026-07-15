@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades de Tempo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>⏰ Conversor de Unidades de Tempo</h1>
+
+    <p>Digite um valor</p>
+
+    <input type="number" id="valor" placeholder="Ex: 120">
+
+    <div class="conversao">
+
+        <div>
+            <label>De</label>
+
+            <select id="origem">
+                <option>Segundos</option>
+                <option>Minutos</option>
+                <option>Horas</option>
+                <option>Dias</option>
+                <option>Semanas</option>
+            </select>
+
+        </div>
+
+        <div>
+            <label>Para</label>
+
+            <select id="destino">
+                <option>Segundos</option>
+                <option>Minutos</option>
+                <option>Horas</option>
+                <option>Dias</option>
+                <option>Semanas</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <button id="converter">
+        Converter
+    </button>
+
+    <div id="resultado">
+
+        O resultado aparecerá aqui.
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
