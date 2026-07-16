@@ -6,139 +6,107 @@
 }
 
 body{
-
-    background:#64b0fc;
-
+    background:linear-gradient(135deg,#dbeafe,#bfdbfe,#93c5fd);
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     height:100vh;
-
 }
 
 .container{
-
-    background:rgb(255, 255, 255);
-
+    background:white;
     width:420px;
-
-    padding:35px;
-
+    padding:30px;
     border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    text-align:center;
 }
 
 h1{
-    text-align: center;
-    color: #2563eb;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.subtitulo{
-    text-align: center;
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 25px;
-    line-height: 1.5;
+    color:#2563eb;
+    margin-bottom:20px;
 }
 
 p{
-
     margin-bottom:10px;
-
+    color:#555;
 }
 
 input{
-
     width:100%;
-
     padding:12px;
-
+    border:2px solid #93c5fd;
     border-radius:10px;
-
-    border:1px solid #ccc;
-
+    outline:none;
     margin-bottom:20px;
-
+    font-size:16px;
 }
 
 .conversao{
-
     display:flex;
-
     gap:15px;
-
-    margin-bottom:25px;
-
+    justify-content:center;
+    margin-bottom:20px;
 }
 
 .conversao div{
+    width:100%;
+}
 
-    flex:1;
-
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#597dca;
 }
 
 select{
-
     width:100%;
-
-    padding:12px;
-
+    padding:10px;
     border-radius:10px;
-
-    border:1px solid #ccc;
-
+    border:2px solid #93c5fd;
+    font-size:15px;
 }
 
 button{
-
     width:100%;
-
-    padding:15px;
-
+    padding:14px;
     border:none;
-
-    border-radius:12px;
-
-    background:#4b7bec;
-
+    border-radius:10px;
+    background:#2563eb;
     color:white;
-
     font-size:17px;
-
     cursor:pointer;
-
     transition:.3s;
-
 }
 
 button:hover{
-
-    background:#2d5fd3;
-
+    background:#1d4ed8;
+    transform:scale(1.03);
 }
 
 #resultado{
-
     margin-top:25px;
-
-    background:#eef5ff;
-
-    padding:18px;
-
-    border-radius:12px;
-
-    text-align:center;
-
+    padding:15px;
+    border-radius:10px;
+    background:#eff6ff;
+    color:#1e3a8a;
     font-weight:bold;
+    min-height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
-    color:#2d5fd3;
+@media(max-width:600px){
+
+.container{
+    width:90%;
+    padding:20px;
+}
+
+.conversao{
+    flex-direction:column;
+}
 
 }
