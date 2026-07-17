@@ -11,8 +11,10 @@
 
 <div class="container">
 
-    <h1>⏰ Conversor de Unidades de Tempo</h1>
-
+    <h1>⏱ TempoConvert</h1>
+<p class="subtitulo">
+    Converta segundos, minutos, horas, dias, semanas e anos em um clique.
+</p>
     <p>Digite um valor</p>
 
     <input type="number" id="valor" placeholder="Ex: 120">
@@ -22,13 +24,13 @@
         <div>
             <label>De</label>
 
-            <select id="origem">
-                <option>Segundos</option>
-                <option>Minutos</option>
-                <option>Horas</option>
-                <option>Dias</option>
-                <option>Semanas</option>
-            </select>
+          <select id="origem">
+    <option value="segundo">Segundos</option>
+    <option value="minuto">Minutos</option>
+    <option value="hora">Horas</option>
+    <option value="dia">Dias</option>
+    <option value="semana">Semanas</option>
+</select>
 
         </div>
 
@@ -36,20 +38,20 @@
             <label>Para</label>
 
             <select id="destino">
-                <option>Segundos</option>
-                <option>Minutos</option>
-                <option>Horas</option>
-                <option>Dias</option>
-                <option>Semanas</option>
+                <option value="segundo">Segundos</option>
+                <option value="minuto">Minutos</option>
+                <option value="hora">Horas</option>
+                <option value="dia">Dias</option>
+                <option value="semana">Semanas</option>
             </select>
 
         </div>
 
     </div>
 
-    <button id="converter">
-        Converter
-    </button>
+    <button id="converter" onclick="converter()"
+    >Converter
+</button>
 
     <div id="resultado">
 
