@@ -31,6 +31,14 @@ O Conversor de Tempo é uma aplicação web que foi criada para facilitar a conv
 - Implementação do conversor de tempo;
 - Melhorias visuais e de layout.
 
+
+
+### v2.0.0
+
+- Atualização da interface do usuário.
+- Ajuste das cores e do layout.
+- Melhor organização visual da aplicação.
+
 ## Desenvolvedores
 
 - Esther
